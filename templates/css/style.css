@@ -1,0 +1,135 @@
+ *{
+    margin:0; padding: 0; border: 0
+  }
+  .clear {
+  clear: both;
+}
+  .wap{
+    background: #40b6ae;
+    width:100%;
+    height:100%;
+  }
+  .header{
+    width:100%;
+    height:100px;
+    box-sizing: border-box;
+	border-bottom: 1px solid #ccc;
+  }
+  .header-left{
+    width: 30%;
+    float: left;
+    height: 100px;
+    line-height: 100px;
+    margin-left: 36%;
+    font-size: 29px;
+    color: #fff;
+  }
+  .header-right{
+    width:32%;
+    float:right;
+    height: 100px;
+    line-height: 100px;
+  }
+  .header-right ul li{
+    list-style-type:none; 
+    float: left;
+    margin-left: 12%;
+    font-size: 16px;
+     cursor:pointer;
+  }
+  .content{
+    width:100%;
+    margin:0 auto;
+    
+    height:650px;
+  }
+  .con-left{
+    width:20%;
+    float: left;
+    position: relative;
+    background: #e3e3e3;
+    height:650px;
+	padding:0 2%;
+  }
+  .con-right{
+    width:75.8%;
+    float: right;
+    background: #eee6d8;
+    position: relative;
+    height:900px;
+  }
+  .all{
+    position:absolute;
+    top:38px;
+	left:2%;
+  }
+   .other{
+    position:absolute;
+    top:38px;
+    left:36%;
+  }
+  .single{
+    position:absolute;
+    top:38px;
+    right:5%;
+  }
+  .text{
+    border: 1px solid #a6a8a9;
+    border-radius: 2px;
+    margin-top:24px;
+    height: 37px;
+    width: 70%;
+    line-height: 37px;
+  }
+  .text-two{
+    top:150px;
+  }
+  .text input,.only input{
+    height: 37px;
+    width: 100%;
+    line-height: 37px;
+    border: 0;
+    outline: none;
+    float: left;
+  }
+  .only{
+     border: 1px solid #a6a8a9;
+    border-radius: 2px;
+    margin-top:36px;
+    height: 37px;
+    width: 100%;
+    line-height: 37px;
+  }
+  p.title{
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .text-con{
+    background: #EBF0FF;
+border-radius: 2px 0px 0px 2px;
+ margin-top:24px;
+    height: 40px;
+    width: 70%;
+    line-height: 40px;
+    text-align: center;
+	cursor:pointer;
+  }
+  .con-left button.search-btn{
+    width:27%;
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+    color: #000;
+    background: #fdeada;
+border-radius: 2px;
+float: right;
+margin-top: -40px;
+right:0;
+ cursor:pointer;
+ border:1px solid #a6a8a9;
+  }
+  .footer{
+    width: 100%;
+    height: 120px;
+	margin-top:10px;
+  }

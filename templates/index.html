@@ -1,0 +1,69 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>佛经人物可视化分析平台</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+<body>
+<div class="wap clear">
+    <div class="header clear">
+      <div class="header-left">佛经人物可视化分析平台</div>
+      <div class="header-right">
+        <ul>
+          <li>数据集说明</li>
+          <li>人物关系发现</li>
+          <li>关于我们</li>
+        </ul>
+      </div>
+    </div>
+    <div class="content clear">
+        <div class="con-left">
+          <p class="title">请选择数据范围</p>
+          <div class="all"><input type="radio" name="">全部佛经</div>
+          <div class="single"><input type="radio" name="">短篇佛经</div>
+          <div class="other"><input type="radio" name="">丁福保词典</div>
+          <div class="only"><input type="text" value="经名（繁体）"></div>
+          <form action="/index/" method="post">
+              {% csrf_token %}
+          <div class="search clear">
+            <div class="text"><input type="text" name="qq" value="请输入人物名称（繁体）" onmouseover=this.focus();this.select(); onclick="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue;this.style.color='#999'}"></div>
+          <button class="search-btn" type="submit">确定</button>
+          </div>
+          </form>
+          <form action="/gongxian/" method="post">
+          <div class="search clear">
+            <div class="text-con">人物相关度出现关系图</div>
+            <button class="search-btn">详情</button>
+          </div>
+          </form>
+           <form action="/class_re/" method="post">
+            {% csrf_token %}
+          <div class="search clear">
+            <div class="text-con">人物类别出现关系图</div>
+            <button class="search-btn">详情</button>
+          </div>
+           </form>
+           <div class="search clear">
+            <div class="text-con">人物地点出现关系图</div>
+            <button class="search-btn">详情</button>
+          </div>
+          <form action="/relation/" method="post">
+            {% csrf_token %}
+          <div class="search clear">
+            <div class="text-con">社会网络</div>
+            <button class="search-btn">详情</button>
+          </div>
+          </form>
+        </div>
+        <div class="con-right">
+            <iframe style="width:100%;height:900px;" src={{ inner }}></iframe>
+        </div>
+    </div>
+</div>
+ 
+
+</body>
+
+</html>
